@@ -9,7 +9,8 @@ function initTabNav(){
     
     function activeTab(index){
         Array.from(tabContent).map(item => item.classList.remove('ativo'))
-        tabContent[index].classList.add('ativo')
+        console.log()
+        tabContent[index].classList.add('ativo',tabContent[index].dataset.anime)
     }
     
     Array.from(tabMenu).map((item, index) => item.addEventListener('click', () => activeTab(index)))
