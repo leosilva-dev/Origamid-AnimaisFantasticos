@@ -38,7 +38,7 @@ export default function initTooltip(){
         const text = element.getAttribute('aria-label')
         tooltipBox.classList.add('tooltip')
         tooltipBox.innerText = text
-        console.log(tooltipBox)
+        // console.log(tooltipBox)
         document.body.appendChild(tooltipBox)
         return tooltipBox
     }
